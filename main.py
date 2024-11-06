@@ -113,7 +113,7 @@ while CatAlive == True:
         cprint("Your cat's intelligence currently is " + str(cat_attributes["intelligence"]),"green")
         cprint("Your cat's weight currently is " + str(cat_attributes["weight"]),"green")
     else:
-        print("It seems your cat does not have enough energy for these actions.")
+        print("It seems your cat does not have enough energy for these actions or you have entered an invalid option.")
         print("Nothing happens.")
 
 # warnings
