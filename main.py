@@ -3,7 +3,6 @@ cat_attributes = {
     "energy": 50,
     "weight": 10,
 }
-import sys
 from termcolor import colored, cprint
 print("Welcome to my cat game!")
 
