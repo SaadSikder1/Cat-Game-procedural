@@ -129,7 +129,7 @@ while CatAlive == True:
         cat_attributes["energy"] += 30
     if cat_attributes['weight'] < 0:
         cprint("Your cat has died of severe malnourishment.", "red")
-        ("""
+        print("""
                                                 @@@@@@@@@@@@@                                              
                                      @@@@@#@@@@@@@@+@@@@@@                                          
                                   @@@==@@-           @@# +@@@                                       
