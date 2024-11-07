@@ -18,7 +18,7 @@ while CatAlive == True:
     if option == '1' and cat_attributes["energy"] > 5:
         cprint("You play with your cat.", "green")
         cat_attributes["energy"] -= 5
-        cat_attributes["weight"] -=  - 0.8
+        cat_attributes["weight"] -= 0.8
         print("""\                                                                                                                   
                                                                                                                    
                                                                                                        /‰          
