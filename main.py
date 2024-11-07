@@ -12,7 +12,7 @@ colour = input("Enter the colour of your cat: ")
 
 CatAlive = True
 while CatAlive == True:
-    option = input("What would you like to do? 1. Play with your cat 2. Train your cat 3. Put your cat to sleep 4. show stats ")
+    option = input("What would you like to do? 1. Play with your cat 2. Train your cat 3. Put your cat to sleep and feed it 4. show stats ")
 
     if option == '1' and cat_attributes["energy"] > 5:
         cprint("You play with your cat.", "green")
@@ -83,6 +83,7 @@ while CatAlive == True:
     elif option == '3':
         cprint("You put your cat to sleep. It sleeps well.", "green")
         cat_attributes["energy"] += 70
+        cat_attributes["weight"] += 5
         print("""\
                                                                                                                                  
                  ƒÆ<                                                                                               
@@ -105,7 +106,7 @@ while CatAlive == True:
                                                                     “`                                             
                                                                                                                    
                                                                                                                     """)
-        cprint("Your cat gains 70 energy", "green")
+        cprint("Your cat gains 70 energy and 5 weight", "green")
     elif option == '4':
         print("Here is your cat's stats: ")
         cprint("Your cat's energy currently is " + str(cat_attributes["energy"]),"green")
