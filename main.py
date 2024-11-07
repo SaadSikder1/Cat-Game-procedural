@@ -10,7 +10,6 @@ print("Welcome to my cat game!")
 name = input("Enter the name of your cat: ")
 colour = input("Enter the colour of your cat: ")
 
-
 CatAlive = True
 while CatAlive == True:
     option = input("What would you like to do? 1. Play with your cat 2. Train your cat 3. Put your cat to sleep 4. show stats ")
@@ -118,9 +117,9 @@ while CatAlive == True:
 
 # warnings
     if cat_attributes["energy"] <5:
-        cprint("Your cat is tired, you should probably put it to sleep.", "orange")
+        cprint("Your cat is tired, you should probably put it to sleep.", "yellow")
     if cat_attributes["weight"] < 3:
-        cprint("Your cat is severely malnourished. You should probably feed it.", "orange")
+        cprint("Your cat is severely malnourished. You should probably feed it.", "yellow")
 
 
 # punishments
